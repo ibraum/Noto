@@ -15,12 +15,12 @@
 
 ---
 ## 🖼️ Aperçu
-<div style="display: flex; gap: 10px;">
-<img src="assets/demo/01-open_page.png" style="width: 100px">
-<img src="assets/demo/02-login_page.png" style="width: 100px">
-<img src="assets/demo/03-aucune_note_page.png" style="width: 100px">
-<img src="assets/demo/04-note_page.png" style="width: 80px">
-<img src="assets/demo/05-add_note.png" style="width: 100px">
-<img src="assets/demo/06-update_note.png" style="width: 100px">
-<img src="assets/demo/07-delete_note.png" style="width: 100px">
+<div style="display: flex; gap: 10px; flex-wrap: wrap; ">
+<img src="assets/demo/01-open_page.png" style="width: 200px">
+<img src="assets/demo/02-login_page.png" style="width: 200px">
+<img src="assets/demo/03-aucune_note_page.png" style="width: 200px">
+<img src="assets/demo/04-note_page.png" style="width: 200px">
+<img src="assets/demo/05-add_note.png" style="width: 200px">
+<img src="assets/demo/06-update_note.png" style="width: 200px">
+<img src="assets/demo/07-delete_note.png" style="width: 200px">
 </div>
