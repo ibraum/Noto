@@ -11,6 +11,8 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
+var t = new Set<int>();
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
