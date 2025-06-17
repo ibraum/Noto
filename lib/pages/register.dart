@@ -132,7 +132,7 @@ class _MyRegisterPageState extends State<RegisterPage> {
                     height: 50,
                     child: ElevatedButton(
                       onPressed: () {
-                        // Action de connexion
+                        creerUnCompte();
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.black,
