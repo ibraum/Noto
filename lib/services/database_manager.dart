@@ -102,4 +102,9 @@ class DatabaseManager {
     }
     return null;
   }
+
+  Future<int> insertUtilisateur(Utilisateur utilisateur) async {
+    final db = await database;
+    return await db.insert('utilisateurs', utilisateur.toMap());
+  }
 }

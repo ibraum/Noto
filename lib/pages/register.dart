@@ -1,3 +1,5 @@
+import 'package:Noto/models/utilisateur.dart';
+import 'package:Noto/services/database_manager.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -10,6 +12,23 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _MyRegisterPageState extends State<RegisterPage> {
+  final DatabaseManager dbManager = new DatabaseManager();
+  final _nomController = TextEditingController();
+  final _mdpController = TextEditingController();
+  final _cmdpController = TextEditingController();
+
+  void creerUnCompte() {
+    if ((_mdpController.text == _cmdpController.text) &&
+        _nomController.text.isNotEmpty) {
+      Utilisateur u = new Utilisateur(
+        nom: _nomController.text,
+        motDePasse: _mdpController.text,
+      );
+
+      dbManager.insertUtilisateur(u);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

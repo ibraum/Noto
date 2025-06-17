@@ -80,7 +80,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
-            // Formulaire
             Padding(
               padding: const EdgeInsets.all(20),
               child: Form(
@@ -191,27 +190,27 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     const SizedBox(height: 30),
 
-                    // GestureDetector(
-                    //   onTap: () {
-                    //     Navigator.push(
-                    //       context,
-                    //       MaterialPageRoute(
-                    //         builder:
-                    //             (context) =>
-                    //                 const RegisterPage(title: "Register"),
-                    //       ),
-                    //     );
-                    //   },
-                    //   child: const Text(
-                    //     "N’avez-vous pas un compte ? Créer un compte",
-                    //     style: TextStyle(
-                    //       color: Colors.black,
-                    //       fontWeight: FontWeight.w500,
-                    //       fontSize: 12,
-                    //     ),
-                    //     textAlign: TextAlign.center,
-                    //   ),
-                    // ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder:
+                                (context) =>
+                                    const RegisterPage(title: "Register"),
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        "N’avez-vous pas un compte ? Créer un compte",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 12,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ],
                 ),
               ),
